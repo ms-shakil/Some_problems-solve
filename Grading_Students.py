@@ -34,7 +34,11 @@ def MyFunction(grades):
 inp = int(input("Enter the number:"))
 arr2 =[]
 for i in range(inp):
-    inp2 = int(input("ENter grade:"))
-    arr2.append(inp2)
+    while True:
+        inp2 = int(input("Enter the grade:"))
+        if inp2 >=0 and inp2 <=100:
+           arr2.append(inp2)
+           break
+        print("Grade  range 1 to 100.")
 print(MyFunction(arr2))
   
